@@ -1,50 +1,416 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <!-- Basic Meta -->
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
+  <title>Ben Rammos — Portfolio</title>
+  <meta name="description" content="Portfolio of Ben Rammos: Senior Design Project, Mini Fabrication Projects, About, and Contact." />
+
+  <!-- Open Graph / Twitter (optional) -->
+  <meta property="og:title" content="Ben Rammos — Portfolio" />
+  <meta property="og:description" content="Senior Design Project, Mini Fabrication Projects, About, and Contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/preview.jpg" />
+  <meta property="og:url" content="https://<your-github-username>.github.io/<your-repo>/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Icons (optional) -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ben Rammos",
+    "email": "mailto:brammos@icloud.com",
+    "url": "https://<your-github-username>.github.io/<your-repo>/",
+    "jobTitle": "Student — Honors Design & Innovation",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Belen Jesuit Preparatory School"
+    }
+  }
+  </script>
+
+  <style>
+    /* Optional tiny add-ons that complement your existing styles.css */
+    .subnav { display:flex; gap:.6rem; flex-wrap:wrap; margin:.6rem 0 1rem; }
+    .chip { display:inline-block; padding:.25rem .6rem; border:1px solid var(--silver); border-radius:999px; font-size:.9rem; }
+    .kicker { letter-spacing:.16em; text-transform:uppercase; font-size:.8rem; opacity:.8; }
+    .section hr { border:none; border-top:1px solid var(--silver); margin:1.5rem 0; }
+    .two-col { display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media (min-width: 900px){ .two-col { grid-template-columns: 1fr 1fr; } }
+    .note { font-size:.95rem; opacity:.9; }
+    .card ul { margin:.4rem 0 .2rem 1.1rem; }
+    .card li { margin:.2rem 0; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Skip link for accessibility -->
+  <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to home">BR</a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <a href="#senior-design">Senior Design</a>
+        <a href="#mini-fab">Mini Fabrication</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="button" href="mailto:brammos@icloud.com" aria-label="Email Ben Rammos">Email</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm a passionate learner working on design and innovation. Welcome to my portfolio.</p>
+  <main id="main">
+    <!-- Landing / Hero -->
+    <section id="home" class="hero" role="region" aria-label="Landing">
+      <div class="container hero-inner">
+        <p class="eyebrow kicker">Honors Design &amp; Innovation</p>
+        <h1 class="name">Ben Rammos</h1>
+        <p class="tagline">Senior Design Project &amp; Mini Fabrication Projects — built with accessible HTML/CSS on GitHub Pages.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#senior-design">Senior Design</a>
+          <a class="button ghost" href="#mini-fab">Mini Fabrication</a>
+        
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A short description of project one.</p>
+    <!-- Senior Design Project -->
+    <section id="senior-design" class="section" role="region" aria-label="Senior Design Project">
+      <div class="container">
+        <h2>Senior Design Project</h2>
+        <p class="note">This section documents the full lifecycle: Problem Statement → PDR → CDR → Final Presentation.</p>
+
+        <div class="subnav" aria-label="Senior Design sub-navigation">
+          <a class="chip text-link" href="#problem-statement">Problem Statement</a>
+          <a class="chip text-link" href="#pdr">Preliminary Design Review</a>
+          <a class="chip text-link" href="#cdr">Critical Design Review</a>
+          <a class="chip text-link" href="#final-presentation">Final Presentation</a>
+        </div>
+
+        <div class="two-col">
+          <article id="problem-statement" class="card" aria-labelledby="problem-title">
+            <h3 id="problem-title">Problem Statement</h3>
+            <p>Boatowners and people want to enjoy the ocean, one of Natures greatest gifts, but feel unsafe. Boating accidents are becoming more and more common.
+ Our Florida waterways are getting way to dangerous for our community, so we are going to try our best to fix it. </p>
+              
+          </article>
+
+
+          <a href="PDR.html">
+          <article id="pdr" class="card" aria-labelledby="pdr-title">
+            <h3 id="pdr-title">Preliminary Design Review (PDR)</h3>
+            <p>Show early concepts and why you chose one direction. Explain trade-offs and risks.</p>
+            <ul>
+              <li>Concept sketches &amp; rough mockups</li>
+              <li>Decision matrix or criteria</li>
+              <li>Risk register and mitigations</li>
+            </ul>
+            <p>
+              <a class="text-link" href="#" aria-disabled="true">PDR slides (PDF)</a>
+            </p>
+          </article>
+          </a>
+
+          <article id="cdr" class="card" aria-labelledby="cdr-title">
+            <h3 id="cdr-title">Critical Design Review (CDR)</h3>
+            <p>Lock design details before fabrication. Include drawings, tolerances, BOM, and test plans.</p>
+            <ul>
+              <li>Detailed drawings / specs</li>
+              <li>Bill of Materials (BOM)</li>
+              <li>Verification &amp; validation plan</li>
+            </ul>
+            <p>
+              <a class="text-link" href="#" aria-disabled="true">CDR slides (PDF)</a>
+            </p>
+          </article>
+
+          <article id="final-presentation" class="card" aria-labelledby="final-title">
+            <h3 id="final-title">Final Presentation</h3>
+            <p>Tell the story: problem → approach → results → next steps. Include photos, data visualizations, and reflections.</p>
+            <ul>
+              <li>Demo video &amp; gallery</li>
+              <li>Performance vs. metrics</li>
+              <li>Lessons learned</li>
+            </ul>
+            <p>
+              <a class="text-link" href="#" aria-disabled="true">Final deck (PDF)</a>
+            </p>
+          </article>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A short description of project two.</p>
-      </div>
-      <!-- Add more projects as needed -->
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
+    <!-- Mini Fabrication Projects -->
+    <section id="mini-fab" class="section alt" role="region" aria-label="Mini Fabrication Projects">
+      <div class="container">
+        <h2>Mini Fabrication Projects</h2>
+        <p class="note">A collection of lab-scale builds across digital fabrication and electronics.</p>
+
+        <div class="grid">
+          <a href="computer-controlled-cutting.html">
+          <article class="card" aria-labelledby="cutting-title">
+            <h3 id="cutting-title">Computer Controlled Cutting</h3>
+            <p>Laser / vinyl cutting workflows, design for kerf, joints, and tolerances.</p>
+            <ul>
+              <li>Design file: <a class="text-link" href="#" aria-disabled="true">DXF/SVG</a></li>
+              <li>Process notes &amp; settings</li>
+              <li>Assembly photos</li>
+            </ul>
+          </article>
+          </a>
+
+          <article class="card" aria-labelledby="embedded-title">
+            <h3 id="embedded-title">Embedded Programming</h3>
+            <p>Microcontroller basics, pin mapping, I/O, and simple firmware examples.</p>
+            <ul>
+              <li>Board schematic &amp; pinout</li>
+              <li>Example code (blink / sensor read)</li>
+              <li>Troubleshooting log</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="scan-title">
+            <h3 id="scan-title">3D Scanning</h3>
+            <p>Capture → clean-up → mesh export. Compare scanner types and accuracy.</p>
+            <ul>
+              <li>Raw scan files</li>
+              <li>Mesh cleanup steps</li>
+              <li>Before/after renders</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="machining-title">
+            <h3 id="machining-title">Computer-Controlled Machining</h3>
+            <p>CNC workholding, toolpaths, and finishing strategies for safe and precise cuts.</p>
+            <ul>
+              <li>CAM toolpaths (2D/3D)</li>
+              <li>Feeds &amp; speeds table</li>
+              <li>Photos / video of operation</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="electronics-title">
+            <h3 id="electronics-title">Electronics Production</h3>
+            <p>PCB milling/soldering, BOM sourcing, and board bring-up procedures.</p>
+            <ul>
+              <li>Gerbers &amp; layout screenshots</li>
+              <li>Soldering checklist</li>
+              <li>Test results</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="molding-title">
+            <h3 id="molding-title">Molding and Casting</h3>
+            <p>Mold design, mix ratios, cure times, and safety considerations.</p>
+            <ul>
+              <li>Mold model &amp; tooling</li>
+              <li>Materials &amp; ratios</li>
+              <li>Defects &amp; fixes</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="wildcard-title">
+            <h3 id="wildcard-title">Wildcard</h3>
+            <p>Open-ended exploration—pick a tool or process and document a small, shippable result.</p>
+            <ul>
+              <li>Goal &amp; constraints</li>
+              <li>Process log</li>
+              <li>Outcome &amp; reflection</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section" role="region" aria-label="About Me">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="grid">
+          <article class="card">
+            <p>I’m <strong>Ben Rammos</strong>, a student in Honors Design &amp; Innovation. I am a problem solver. I enjoy finding problems i expirience in my personal life and being able to fix them. I want to expand my knoledge and expirience and start solving other peoples problems too. This portfolio tells you more about me and what i enjoy doing
+
+            
+               <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+            </head>
+            <body>
+              
+            </body>
+            </html>. 
+              .</p>
+            <p>Outside of class and building projects, I enjoy spending time with my family and friends. I like to Golf, fish, and hang out with my friends. I also row for Belen Jesuit. I am a 8 time national champion and a 2 time competetor at the henley royal regatta, making history for belen in 2025.
+              
+            </p>
+          </article>
+          <article class="card">
+            <h3>Highlights</h3>
+            <ul>
+              <li>Ive taken Enginnering in 10th, 11th, and 12th grade. </li>
+              <li>I am one of the top varsity rowers in Belen crew and have won the most Henley-awarding races in the teams history </li>
+              <li>I am expirienced with Fusion 360 and CAD
+                
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="section" role="region" aria-label="Contact Me">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Best way to reach me is email: <a class="text-link strong" href="mailto:brammos@icloud.com">brammos@icloud.com</a></p>
+
+        <!-- Accessible, no-backend contact form (mailto fallback) -->
+        <form action="mailto:brammos@icloud.com" method="post" enctype="text/plain" aria-label="Email form">
+          <div class="grid">
+            <div class="card">
+              <label for="name"><strong>Your Name</strong></label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="card">
+              <label for="email"><strong>Your Email</strong></label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="card" style="grid-column: span 12;">
+              <label for="message"><strong>Message</strong></label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me more…" required></textarea>
+            </div>
+          </div>
+          <p style="margin-top:1rem;">
+            <button class="button primary" type="submit">Send Email</button>
+            <a class="button" href="mailto:brammos@icloud.com">Open in Mail</a>
+          </p>
+        </form>
+        <p class="note" style="margin-top:.6rem;">Note: The form opens your email app—no server required. For guaranteed delivery, click “Open in Mail”.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ben Rammos</p>
+      <nav aria-label="Footer">
+        <a class="text-link" href="#home">Back to top</a>
+      </nav>
+    </div>
+    <script>
+      // Insert current year without extra libraries
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
+
+  <!-- Optional visually-hidden utility if not in styles.css
+  <style>
+    .visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip: rect(1px, 1px, 1px, 1px); white-space:nowrap; border:0; padding:0; margin:-1px; }
+  </style>
+  -->
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentored Project • Template</title>
+  
+  <!--
+    HOW TO USE THIS PAGE
+    1) Duplicate this file per project and replace the [[[PLACEHOLDER]]] text.
+    2) Replace example images/video src with your own files.
+    3) Delete any sections you don't need. Keep the structure and classes for style.
+    4) Optional: Search for "TODO" notes.
+
+    Color palette matches your site: navy / white / silver.
+  -->
+
+  <style>
+    :root {
+      --navy: #0b1e3b;     /* Belen navy */
+      --navy-ink: #0f264a; /* slightly brighter for headings */
+      --silver: #cfd6e0;   /* light silver accents */
+      --silver-2: #e7ecf3; /* background tint */
+      --white: #ffffff;
+      --ink: #0e1320;      /* body text */
+      --muted: #6b7280;    /* secondary text */
+      --accent: #f4b400;   /* subtle highlight if needed */
+      --radius: 16px;
+      --shadow: 0 8px 28px rgba(2, 12, 33, 0.1);
+      --maxw: 1100px;
+    }
+
+    /* Base */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+      color: var(--ink); background: linear-gradient(180deg, var(--white), var(--silver-2));
+      line-height: 1.55;
+    }
+    a { color: var(--navy-ink); text-decoration-thickness: 2px; }
+    img, video { max-width: 100%; border-radius: 12px; }
+    figure { margin: 0; }
+    header.site { background: var(--navy); color: var(--white); }
+    header.site .wrap { max-width: var(--maxw); margin: 0 auto; padding: 16px 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; }
+    header.site h1 { font-size: 18px; margin: 0; letter-spacing: 0.5px; font-weight: 700; }
+    header.site nav a { color: var(--white); opacity: 0.9; margin-left: 16px; }
+
+    /* Page intro */
+    .hero { max-width: var(--maxw); margin: 32px auto 20px; padding: 0 20px; }
+    .badge { display: inline-block; background: var(--silver-2); color: var(--navy-ink);
+      padding: 6px 10px; border-radius: 999px; font-size: 12px; border: 1px solid var(--silver); }
+    .title { font-size: clamp(28px, 4vw, 44px); margin: 10px 0 8px; color: var(--navy-ink); }
+    .subtitle { color: var(--muted); font-size: 16px; max-width: 65ch; }
+
+    .meta-grid { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .meta-card { background: var(--white); border: 1px solid var(--silver); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); }
+    .meta-card h4 { margin: 0 0 8px; color: var(--navy-ink); font-size: 13px; letter-spacing: 0.3px; text-transform: uppercase; }
+    .meta-card p { margin: 0; font-size: 14px; }
+
+    /* Layout */
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 10px 20px 60px; }
+    .grid { display: grid; gap: 24px; grid-template-columns: 1.2fr 0.8fr; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+    /* Section cards */
+    section.card { background: var(--white); border: 1px solid var(--silver); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+    section.card h2 { margin-top: 0; color: var(--navy-ink); font-size: clamp(20px, 3vw, 28px); }
+    section.card h3 { color: var(--navy-ink); margin-top: 18px; }
+    section.card .pill { display: inline-block; background: var(--silver-2); border: 1px solid var(--silver); padding: 6px 10px; border-radius: 999px; font-size: 12px; margin: 4px 6px 0 0; }
+
+    /* Gallery */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .gallery figure { background: var(--silver-2); border: 1px solid var(--silver); padding: 8px; border-radius: 12px; }
+    .gallery figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Video wrapper keeps aspect ratio */
+    .video-wrap { position: relative; padding-top: 56.25%; border-radius: 12px; overflow: hidden; background: var(--silver-2); border: 1px solid var(--silver); }
+    .video-wrap iframe, .video-wrap video { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+    /* Callouts */
+    .callout { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: flex-start; background: #f7fafc; border: 1px dashed var(--silver); padding: 12px 14px; border-radius: 12px; }
+    .callout .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--accent); margin-top: 7px; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--silver); padding: 24px 20px 60px; color: var(--muted); background: var(--white); }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; align-items: center; max-width: var(--maxw); margin: 0 auto; }
+  </style>
+</head>
+<body>
+  

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer‑Controlled Cutting — Project Log</title>
+  <style>
+    :root{
+      --bg:#0b1535; /* deep navy */
+      --card:#0f1c47;
+      --ink:#e8ecf8;
+      --muted:#b9c1d9;
+      --accent:#5ee1a7;
+      --accent-2:#7bb7ff;
+      --border: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,var(--bg),#0e1a40 60%,#0d1738);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--accent-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(10px);background:rgba(11,21,53,.75);border-bottom:1px solid var(--border);z-index:10}
+    .wrap{max-width:1060px;margin-inline:auto;padding:20px}
+    .topbar{display:flex;align-items:center;gap:18px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:36px;height:36px;border-radius:12px;background:radial-gradient(circle at 30% 30%,var(--accent),transparent 40%),linear-gradient(135deg, var(--accent-2), transparent 60%),#0b2b5a;border:1px solid var(--border);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:14px}
+    nav a:hover{background:#111c46}
+
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{background:linear-gradient(180deg,#111c46,#0f1c47);border:1px solid var(--border);border-radius:16px;padding:18px 18px 16px;box-shadow:0 6px 26px rgba(0,0,0,.25)}
+    .card h2{margin:0 0 8px;font-size:22px}
+    .card h3{margin:16px 0 8px;font-size:18px;color:#eaf2ff}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:4px 10px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px;margin-bottom:6px}
+
+    .timeline{position:relative;padding-left:18px;margin:10px 0 0}
+    .timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent), transparent)}
+    .step{position:relative;margin:14px 0 14px 0;padding-left:10px}
+    .step::before{content:"";position:absolute;left:-12px;top:4px;width:10px;height:10px;border-radius:10px;background:var(--accent);box-shadow:0 0 0 3px rgba(94,225,167,.2)}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:700px){.split{grid-template-columns:1fr}}
+
+    .imgdrop{display:grid;place-items:center;aspect-ratio:16/9;border:1px dashed var(--border);border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);font-size:14px;color:var(--muted)}
+    .imgdrop input{display:none}
+
+    .checklist li{margin:8px 0}
+
+    .kbd{font:12px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;background:#0a1230;border:1px solid var(--border);padding:.2em .45em;border-radius:6px}
+
+    footer{opacity:.8}
+    .print-btn{appearance:none;border:1px solid var(--border);background:rgba(255,255,255,.06);color:var(--ink);padding:10px 14px;border-radius:10px;cursor:pointer}
+    .print-btn:hover{background:rgba(255,255,255,.12)}
+
+    /* Simple table styling */
+    table{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    th,td{border-bottom:1px solid var(--border);padding:10px;text-align:left}
+    th{background:#101a43}
+
+    /* Anchor spacing for sticky header */
+    section{scroll-margin-top:90px}
+  </style>
+</head>
+
+    <!-- DESIGN -->
+    <section id="design" class="card" style="margin-top:22px">
+      <h2>Design</h2>
+      <p>Here, we are making our initial design. We used a simple sailboat and an easy color pallet to make our first sticker.</p>
+      <img style="width: 50%" src="unnamed.jpg">
+      <div class="split">
+        <div>
+          
+        </div>
+        <div>
+        
+        </div>
+      </div>
+      
+     
+    </section>
+
+    <!-- CUTTING -->
+    <section id="cutting" class="card">
+      <h2>Cutting</h2>
+      <div class="split">
+        <p> Here we were uploading our design and getting it ready to print out. We are giving it final touches and getting it all cleaned up. </p>
+      
+        
+        <div>
+        
+          <img style="width: 75%" src="IMG_0670.jpeg"
+    
+
+    
+            <span>
+    </section>
+
+
+    <!-- LASER CUTTING -->
+    <section id="laser" class="card">
+      <h2>Applying</h2>
+      <img style="width: 50%" src="IMG_0671.jpeg"
+          <label class="imgdrop">
+           <p> Here was our final product. Our simple design with the simple color pallet we chose worked out great.</p>
+          </label>
+        </div>
+      </div>
+      
+      
+        
+    </section>
+
+    <!-- REFLECTION / RUBRIC HOOKS -->
+    <section id="reflection" class="card">
+      <h2>Reflection</h2>
+      <p>Our final product came out great. We definetly want to go into more detail for our next logo and will use the skills we learned from this first time to do it.</p>
+    </section>
+
+    
+
+</html>
